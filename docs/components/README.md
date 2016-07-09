@@ -1,3 +1,5 @@
-# Template for a components.
+Template for a components.
+==========================
+### Document structure:
 
-TBD
+### Example:
