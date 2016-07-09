@@ -4,7 +4,7 @@ Template for functions.
 1. Signature
 2. Short description
 3. Long description(if exists)
-4. Arguments description
+4. Arguments description(if exists)
 5. Return statement description(if returns something)
 6. Code
 
