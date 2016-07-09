@@ -16,17 +16,25 @@ function **my_function(array $arg1, $arg2 = NULL)**
 
 > Additional info for this function(long description).
 
-* **$arg1**:\
-&nbsp;&nbsp;&nbsp;&nbsp;type: _array_\
-&nbsp;&nbsp;&nbsp;&nbsp;description: _Argument 1 description._
-* **$arg2**:\
-&nbsp;&nbsp;&nbsp;&nbsp;type: _string_\
-&nbsp;&nbsp;&nbsp;&nbsp;default: _NULL_\
-&nbsp;&nbsp;&nbsp;&nbsp;description: _Argument 2 description._
+* **$arg1**:
 
-* **return**:\
-&nbsp;&nbsp;&nbsp;&nbsp;type: _object_\
-&nbsp;&nbsp;&nbsp;&nbsp;description: _Return some object._
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: _array_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: _Argument 1 description._
+
+* **$arg2**:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: _string_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default: _NULL_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: _Argument 2 description._
+
+* **return**:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: _object_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: _Return some object._
 
 **Code:**
 ```php
