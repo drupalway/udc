@@ -26,7 +26,7 @@ my_module.test_form:
     _title: 'Test form'
 ```
 5. **Set permissions**. [optional] Permissions to restrict the access for this form.
-```php
+```yml
 my_module.test_form:
   path: 'testform/drupalway'
   defaults:
