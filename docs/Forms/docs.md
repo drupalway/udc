@@ -24,6 +24,13 @@ In Drupal 8, Forms are defined by implementing the \Drupal\Core\Form\FormBuilder
  and the basic workflow of a form is defined by
  buildForm, validateForm, and submitForm methods on the interface.
 
+# Drupal 8 overview
+Form classes implement the \Drupal\Core\Form\FormBuilderInterface and the basic workflow of a form is defined by the buildForm, validateForm, and submitForm methods of the interface. When a form is requested it's defined as a renderable array often referred to as a Form API array or simply $form array. The $form array is converted to HTML by the render process and displayed to the end user. When a user submits a form the request is made to the same URL that the form was displayed on, Drupal notices the incoming HTTP POST data in the request and this time instead of building the form and displaying it as HTML builds the form and then proceeds to call the applicable validation and submission handlers.
+
+Defining forms as structured arrays instead of straight HTML has many advantages including:
+- Consistent HTML output for all forms.
+- Forms provided by one module can be easily altered by another without complex search and replace logic.
+- Complex form elements like file uploads and voting widgets can be encapsulated in reusable bundles that include both display and processing logic.
 
 # New Form API HTML5 elements in Drupal 8
 There are new HTML 5 elements like
@@ -45,14 +52,6 @@ The '#type' => 'language_select' element is a language selector to make it easy
 to put language configuration on forms. The '#type' => 'dropbutton' and '#type' => 'operations'
 elements are the dropdown link/operations list that you may know from Views,
 now used consistently for operations in Drupal 8.
-
-# Drupal 8 overview
-Form classes implement the \Drupal\Core\Form\FormBuilderInterface and the basic workflow of a form is defined by the buildForm, validateForm, and submitForm methods of the interface. When a form is requested it's defined as a renderable array often referred to as a Form API array or simply $form array. The $form array is converted to HTML by the render process and displayed to the end user. When a user submits a form the request is made to the same URL that the form was displayed on, Drupal notices the incoming HTTP POST data in the request and this time instead of building the form and displaying it as HTML builds the form and then proceeds to call the applicable validation and submission handlers.
-
-Defining forms as structured arrays instead of straight HTML has many advantages including:
-- Consistent HTML output for all forms.
-- Forms provided by one module can be easily altered by another without complex search and replace logic.
-- Complex form elements like file uploads and voting widgets can be encapsulated in reusable bundles that include both display and processing logic.
  
 ## Form builder.
 
