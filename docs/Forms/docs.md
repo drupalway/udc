@@ -156,7 +156,7 @@ The argument passed to the getForm() method is the name of the class that define
  and is an implementation of \Drupal\Core\Form\FormBuilderInterface.
  If you need to pass any additional parameters to the form, pass them on after the class name.
  
-# Altering form
+## Altering form
 Altering forms is where the Drupal 8 Form API reaches into basically the same approach where Drupal 7 is.
  Given that you provided a form ID for your form, altering is based on that.
  Use hook_form_alter() and/or hook_form_FORM_ID_alter() to alter the form.
