@@ -181,3 +181,18 @@ function example2_form_example_form_alter(array &$form, FormStateInterface $form
   $form['phone_number']['#description'] = t('Start with + and your country code.');
 }
 ```
+
+## Rendering form
+### D7:
+In Drupal 7 it's can be simply doing via drupal_render() function:
+```php
+$form = drupal_get_form('mymodule_test_form');
+$rendered_form = drupal_render($form);
+```
+### D8:
+Drupal 8 also contains the drupal_render() function, and it's can be used, but this function
+is deprecated and will be removed in Drupal 9, so it's recommended to use the Renderer service:
+```php
+$form = \Drupal::formBuilder()->getForm('Drupal\example\Form\ExampleForm');
+$rendered_form = \Drupal::service('renderer')->render($form);
+```
